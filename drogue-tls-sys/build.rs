@@ -99,6 +99,7 @@ fn main() {
         .define("ENABLE_TESTING", "OFF")
         .define("ENABLE_PROGRAMS", "OFF")
         .define("CMAKE_TRY_COMPILE_TARGET_TYPE", "STATIC_LIBRARY")
+        .define("CMAKE_C_COMPILER_WORKS", "1")
         .cflag("-DMBEDTLS_CONFIG_FILE=\\\"drogue_config.h\\\"")
         .cflag(format!("-I{}", include_dir.display()));
 
